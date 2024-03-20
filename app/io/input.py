@@ -1,7 +1,8 @@
+import pandas as pd
+
 """
   This function reads text from the console and returns it as a string.
 """
-
 
 def read_from_console():
     text = input()
@@ -37,5 +38,5 @@ def read_from_file_python(filename):
 
 
 def read_from_file_pandas(filename):
-    df = pd.read_csv(filename)
+    df = pd.read_csv(filename).to_string()
     return df
